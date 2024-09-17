@@ -26,6 +26,7 @@ public class Main {
 				System.out.println("Enter room port:");
 				int port = Integer.parseInt(System.console().readLine());
 				Server server = new Server(port);
+				server.configureLogging(true, "log.txt");
 				server.run();
 			}
 			
